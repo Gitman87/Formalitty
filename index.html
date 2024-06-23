@@ -9,50 +9,67 @@
   <body>
     <div class="main-container">
       <div class="graphic-container">
-        <header>
-          <div class="logo-container">
-            <img src="" alt="" />
-            <p class="logotype"></p>
-          </div>
-        </header>
-      </div>
-      <div class="content-container">
-        <div class="hero">
-          <h1></h1>
-          <h2></h2>
-          <p class="explanation"></p>
-          <cite class="main-quote"></cite>
+        <div class="logo-container">
+          <img src="images/checkbox.png" id="check" alt="check-sign" />
+          <p id="logo">Formality</p>
         </div>
+      </div>
+      <div class="rest-container">
+        <div class="hero">
+          <h1>This is some kind of from</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+          <p class="explanation">
+            Delectus eius pariatur nobis corrupti? Dolores vitae ducimus, sint
+            nobis eum vel exercitationem magni? Nobis autem incidunt mollitia.
+            Excepturi animi ab voluptate.
+          </p>
+          <cite class="main-quote">Just do it</cite>
+        </div>
+
         <main>
           <form action="" method="post">
-            <div class="account-fields-container">
-              <fieldset id="account-field">Can You <s>fill</s> feel it?</fieldset>
+            <fieldset id="account-field">
+              <legend>Can You <s>fill</s> feel it?</legend>
+              <div class="account-fields-container">
+                <div id="first-column">
+                  <div class="field" .class="first-row">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" required value="John"/>
+                  </div>
+                  <div class="field">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required value="name@example.com" />
+                  </div>
+                  <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required value="admin" minlength="5"/>
+                  </div>
+                </div>
 
-              <div class="field">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" required />
+                <div id="second-column">
+                  <div class="field">
+                    <label for="last-name">Last Name</label>
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      required value="Smith"
+                    />
+                  </div>
+
+                  <div class="field">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required value="+48 001 001 001"/>
+                  </div>
+
+                  <div class="field">
+                    <label for="confirm">Confirm-password</label>
+                    <input type="password" id="confirm" required value="admin" minlength="5"/>
+                  </div>
+                </div>
               </div>
-              <div class="field">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" required />
-              </div>
-              <div class="field">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" required />
-              </div>
-              <div class="field">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" required />
-              </div>
-              <div class="field">
-                <label for="password">Password</label>
-                <input type="password" id="password" required />
-              </div>
-              <div class="field">
-                <label for="confirm">Confirm-password</label>
-                <input type="password" id="confirm" required />
-              </div>
-            </div>
+            </fieldset>
+            <button type="submit" id="submit-button">SUBMIT</button>
           </form>
         </main>
       </div>
